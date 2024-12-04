@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <style>
+      body {
+          padding-top: 56px;
+      }
+      .portfolio-item {
+          margin-bottom: 30px;
+      }
+      footer {
+          background-color: #343a40;
+          color: white;
+          padding: 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+          <a class="navbar-brand" href="#">My Portfolio</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                      <a class="nav-link" href="#about">About</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#portfolio">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#contact">Contact</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+  <!-- Header -->
+  <header class="bg-info text-white text-center">
+    <div class="container d-flex align-items-center flex-column">
+        <h1 class="mt-5">Welcome to My Portfolio</h1>
+        <p class="lead">Data Science Student</p>
+    </div>
+</header>
+<!-- About Section -->
+<section id="about" class="py-5">
+  <div class="container">
+      <div class="row">
+          <div class="text-center col-lg-6 mx-auto">
+              <h2>About Me</h2>
+              <p>I am a first-year master's student at the Chennai Mathematical Institute with a strong enthusiasm for mathematics. 
+                I enjoy programming and have interest in machine learning.
+              </p>
+          </div>
+          <!-- 
+          <div class="col-lg-6">
+              <img src="https://via.placeholder.com/500x300" class="img-fluid" alt="About Image">
+          </div>
+          -->
+      </div>
+  </div>
+</section>
+<!-- Portfolio Section -->
+<section id="portfolio" class="bg-light py-5">
+  <div class="container">
+      <h2 class="text-center mb-4">Portfolio</h2>
+      <div class="row">
+          <div class="col-md-4 portfolio-item mx-auto">
+              <div class="card">
+                  <img src="https://via.placeholder.com/400x300" class="card-img-top" alt="Project 1">
+                  <div class="card-body">
+                      <h5 class="card-title">Visualizing Symmetry Groups</h5>
+                      <p class="card-text">A group is a fundamental algebraic structure, and symmetry groups are a specific type that represent
+                         the geometric transformations of polygons. This interactive interface allows users to visualize 
+                         these algebraic structures through their transformations, bringing abstract concepts to life in a geometric context.</p>
+                      <a href="/visualization" class="btn btn-primary">View Project</a>
+                  </div>
+              </div>
+          </div>
+          <!-- 
+          <div class="col-md-4 portfolio-item">
+              <div class="card">
+                  <img src="https://via.placeholder.com/400x300" class="card-img-top" alt="Project 2">
+                  <div class="card-body">
+                      <h5 class="card-title">Project 2</h5>
+                      <p class="card-text">Description of project 2.</p>
+                      <a href="#" class="btn btn-primary">View Project</a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4 portfolio-item">
+              <div class="card">
+                  <img src="https://via.placeholder.com/400x300" class="card-img-top" alt="Project 3">
+                  <div class="card-body">
+                      <h5 class="card-title">Project 3</h5>
+                      <p class="card-text">Description of project 3.</p>
+                      <a href="#" class="btn btn-primary">View Project</a>
+                  </div>
+              </div>
+          </div>
+          -->
+      </div>
+</section>
+<!-- Contact Section -->
+<section id="contact" class="py-5">
+  <div class="container bg-dark text-light">
+      <h2 class="text-center mb-4">Contact Me</h2>
+      <div class="row">
+          <!-- 
+          <div class="col-lg-6">
+              <form>
+                  <div class="form-group">
+                      <label for="name">Name</label>
+                      <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                  </div>
+                  <div class="form-group">
+                      <label for="email">Email</label>
+                      <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                  </div>
+                  <div class="form-group">
+                      <label for="message">Message</label>
+                      <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Send</button>
+              </form>
+          </div>
+          -->
+          <div class="col-lg-6">
+              <p><i class="fas fa-envelope"></i> ahinge1999@gmail.com</p>
+              <p><i class="fab fa-linkedin"></i> <a href="www.linkedin.com/in/aniket-hinge">Linkedin</a></p>
+              <p><i class="fab fa-github"></i> <a href="https://github.com/Ash-insert">Github</a></p>
+          </div>
+      </div>
+  </div>
+</section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
